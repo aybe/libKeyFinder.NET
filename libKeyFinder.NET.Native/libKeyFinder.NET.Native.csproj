@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>libKeyFinder for .NET (native dependencies)</Description>
+    <Copyright>Copyright (c) 2017 Aybe</Copyright>
+    <Authors>Aybe</Authors>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageTags>key chord detection music DJ</PackageTags>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageProjectUrl>https://github.com/aybe/libKeyFinder.NET</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/aybe/libKeyFinder.NET/master/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <Content Include="build\libKeyFinder.NET.Native.targets">
+      <Pack>true</Pack>
+      <PackagePath>build\</PackagePath>
+    </Content>
+
+    <Content Include="build\native\x64\fftw3.dll">
+      <Pack>true</Pack>
+      <PackagePath>build\native\x64\</PackagePath>
+    </Content>
+
+    <Content Include="build\native\x64\libKeyFinder.dll">
+      <Pack>true</Pack>
+      <PackagePath>build\native\x64\</PackagePath>
+    </Content>
+
+    <Content Include="build\native\x86\fftw3.dll">
+      <Pack>true</Pack>
+      <PackagePath>build\native\x86\</PackagePath>
+    </Content>
+
+    <Content Include="build\native\x86\libKeyFinder.dll">
+      <Pack>true</Pack>
+      <PackagePath>build\native\x86\</PackagePath>
+    </Content>
+
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libKeyFinder.NET", "libKeyFinder.NET\libKeyFinder.NET.csproj", "{90A075ED-0D48-4465-88A1-8CFC865EF2E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libKeyFinder.NET.Native", "libKeyFinder.NET.Native\libKeyFinder.NET.Native.csproj", "{153733C5-1794-4E58-9061-827EA722E624}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90A075ED-0D48-4465-88A1-8CFC865EF2E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A075ED-0D48-4465-88A1-8CFC865EF2E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A075ED-0D48-4465-88A1-8CFC865EF2E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A075ED-0D48-4465-88A1-8CFC865EF2E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{153733C5-1794-4E58-9061-827EA722E624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{153733C5-1794-4E58-9061-827EA722E624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{153733C5-1794-4E58-9061-827EA722E624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{153733C5-1794-4E58-9061-827EA722E624}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C038A53E-1143-4209-8BAC-5DA81747FA13}
+	EndGlobalSection
+EndGlobal

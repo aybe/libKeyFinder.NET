@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>libKeyFinder for .NET</Description>
+    <Copyright>Copyright (c) 2017 Aybe</Copyright>
+    <Authors>Aybe</Authors>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageTags>key chord detection music DJ</PackageTags>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageProjectUrl>https://github.com/aybe/libKeyFinder.NET</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/aybe/libKeyFinder.NET/master/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="tools\uninstall.ps1">
+      <Pack>true</Pack>
+      <PackagePath>tools\</PackagePath>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\libKeyFinder.NET.Native\libKeyFinder.NET.Native.csproj" />
+  </ItemGroup>
+
+</Project>
